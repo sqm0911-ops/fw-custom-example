@@ -19,3 +19,9 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 
 #see main repo for details on this any many other optional subsystems. We have too many, one has to choose what fits into his choice of stm32
 #DDEFS += -DEFI_ONBOARD_MEMS=TRUE
+
+# Black Pill F411 (experimental)
+DDEFS += -DSTM32F411xE
+DDEFS += -DSTM32_HSECLK=25000000
+# ahorra flash
+DDEFS += -DEFI_LUA=FALSE
